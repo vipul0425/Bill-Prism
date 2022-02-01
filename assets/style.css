@@ -1,0 +1,225 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --color-primary : #2E98FF;
+    --color-secondary : #153453;
+    --color-light : #f2f9ff;
+    --color-light-bg : #f7f9fa;
+    --color-white : #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#landing {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: block;
+}
+#details {
+    display: none;
+    background-color: var(--color-primary);
+    height: auto !important;
+}
+#main-jumbotron {
+    display: none;
+}
+#final-results{
+    display: none;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    overflow-x: hidden;
+}
+.btn-primary{
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    border: 0;
+    height: 40px;
+    width: 169px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-weight: lighter;
+}
+.btn-secondary{
+    background-color: var(--color-primary);
+    border: 0;
+    height: 40px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-weight: bold;
+    color: var(--color-white) !important;
+}
+.btn-tertiary{
+    background-color: var(--color-light);
+    color: var(--color-primary);
+    border: 0;
+    height: 40px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-weight: bold;
+}
+
+
+label {
+    font-size: 1.3rem;
+    color: var(--color-secondary);
+    font-weight: 600;
+    
+} 
+input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-color: var(--color-secondary);
+    text-align: center;
+    color: var(--color-secondary);
+    font-size: 1rem;
+    
+} 
+input:focus {
+    border-top: 0 !important;
+    border-left: 0px !important;
+    border-right: 0 !important;
+    outline: 0px !important;
+    box-shadow: 0px 2px 5px var(--color-light);
+    text-align: center;
+    
+} 
+.responsive-img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+#bill{
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+#details h1{
+    color: var(--color-white);
+}
+#trip-name{
+    background-color: var(--color-white);
+    color: var(--color-secondary);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  
+}
+.person-div{
+    text-align: left;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-secondary);
+    padding: 12px;
+    margin-bottom: 15px;
+}
+.auto-height{
+    height: auto !important;
+    min-height: 100vh;
+}
+#cal{
+    font-size: 1.4rem;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#reults-div{
+    height: auto;
+    width: 70%;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: 1.3rem;
+    border: 1.5px solid var(--color-secondary);
+}
+#payments{
+    list-style: inside;
+    padding-left: 0;
+}
+#payments li {
+    border-bottom: 1px solid var(--color-secondary);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#flex-end{
+    justify-content: flex-end !important;
+}
+#share{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+#install{
+    margin-top: 10px;
+    display:none;
+}
+
+@media (display-mode:standalone),(display-mode:minimal-ui){
+    #install{
+        display:none;
+    }
+}
+.alert-box{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 37%);
+    height: auto;
+    width: 70%;
+    background-color: #F55656;
+    color: var(--color-light);
+    border-radius: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    z-index: 1001;
+    display: none;
+}
+.delete-btn{
+    color : #F55656 !important;
+    padding: 2px 8px 2px 8px !important;
+}
+#home-btn{
+    margin-top: 10px;
+}
+.alert-overlay{
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-secondary);
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+
+}

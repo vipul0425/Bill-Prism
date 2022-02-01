@@ -1,0 +1,47 @@
+{
+    "name": "Bill Prism|Split Bills Easily",
+    "short_name": "Bill Prism",
+    "start_url": "./",
+    "scope": "./",
+    "theme_color": "#2E98FF",
+    "orientation": "portrait-primary",
+    "display": "standalone",
+    "description": "Bill Prism will do the math for you to help you split bills accuratly after a group trip. Spliting bill become easy with us.",
+    "background_color": "#2E98FF",
+    "icons":[
+        {
+            "src": "assets/images/icon512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/icon1024x1024.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        }
+    ],
+    "screenshots" : [
+        {
+          "src": "assets/images/ss1.png",
+          "sizes": "320x640",
+          "type":"image/png",
+          "platform": "narrow",
+          "label" : "Homescreen"
+        },
+        {
+          "src": "assets/images/ss2.png",
+          "sizes": "320x640",
+          "type":"image/png",
+          "platform": "narrow",
+          "label" : "Screen to add details."
+        },
+        {
+          "src": "assets/images/ss3.png",
+          "sizes": "320x640",
+          "type":"image/png",
+          "platform": "narrow",
+          "label" : "Result tab."
+        }
+    ],
+    "id": "/splitbill/"
+}

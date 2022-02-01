@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- manifest -->
+    <link rel="manifest" href="app.webmanifest">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- apple-touch-icon -->
+    <link rel="apple-touch-icon" href="assets/images/icon512x512.png">
+    <!-- my css -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>Bill Prism | Split your bill easily</title>
+
+</head>
+
+<body>
+    <div id="landing">
+        <div class="container">
+            <h1>Why to fight while spliting bill after a trip?</h1>
+            <img src="assets/images/friendsa.jpg" alt="image" class="responsive-img">
+            <h2>Bill Prism helps you split bills not bonds !</h2>
+            <p>Bill Prism will do the math for you to help you split bills accuratly. Spliting bill become easy with us.<br> Save your time and money by leting us do all the maths for you. 
+            </p>
+            <button id="get-started" class="btn-primary" type="button">Get Started</button>
+            <button id="install" class="btn-primary" type="button"> Install App</button>
+        </div>
+    </div>
+    <div id="main-jumbotron">
+    <div class="container">
+        <div class="form">
+            <form id="form-bill">
+                <img src="assets/images/backpic.png" alt="backpic" class="responsive-img">
+                <br>
+                <label for="trip"> Name of trip: </label>
+                <br>
+                <br>
+                <input type="text" name="trip" id="trip" placeholder="Goa">
+                <br>
+                <br>
+                <label for="member">Total Number of Members:</label>
+                <br>
+                <br>
+                <input type="number" name="member" id="member">
+                <br>
+                <br>
+                <input type="submit" class="btn-secondary" value="Next" id="sub">
+            </form>
+        </div>
+    </div>
+</div>
+    <div id="details">
+        <div class="container auto-height">             
+            <h1>Write your expanses for <span id="trip-name"></span></h1>
+            <div>
+                <div id="bill">
+                    
+                </div>
+                <button type="button" id="cal" class="btn-primary">Calculate</button>
+            </div>
+        </div>
+    </div>
+    <div id="final-results">
+        <div class="container auto-height" id="flex-end">             
+                <div id="reults-div">
+                    <ul id="payments">
+        
+                    </ul>
+                </div>
+                <button type="button" class="btn-primary" id="share">Share</button>
+                <button type="button" class="btn-primary" id="home-btn">Back to home</button>
+
+                <img src="assets/images/lastpic.png" alt="backpic" class="responsive-img" id="last-img">
+        </div>
+    </div>
+   <div class="alert-overlay"></div> 
+  <div class="alert-box">
+   <h3 id="alert-content"></h3>
+   <button type="button" class="btn-tertiary" id="alert-btn"> OK </button>
+  </div>
+
+    <!-- my js -->
+    <script src="sw-register.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
