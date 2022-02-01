@@ -18,6 +18,12 @@
             "src": "assets/images/icon1024x1024.png",
             "sizes": "1024x1024",
             "type": "image/png"
+        },
+        {
+            "src": "assets/images/icon512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose":"maskable"
         }
     ],
     "screenshots" : [
